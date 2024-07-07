@@ -10,6 +10,7 @@ router.post("/add", async (req, res) => {
         await newBook.save().then(() => {
             res.status(200)
                 .json({ message: "Book added succesfully" })
+
         })
     } catch (err) {
         console.log(err);
